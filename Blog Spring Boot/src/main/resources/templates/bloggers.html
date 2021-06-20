@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"	layout:decorator="layouts/main">
+<head>
+	<title>Blog</title>
+</head>
+<body>
+		
+	<div layout:fragment="loginContent">
+		
+	<article th:each="user : ${users}">
+	    <header>
+	        <h1 th:text="${user.fullName}">Bloggerek</h1> 
+	    </header>
+    </article>
+
+	</div>
+		
+		
+</body>
+</html>
